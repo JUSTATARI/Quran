@@ -39,7 +39,7 @@ async def zzzback(_, query: CallbackQuery):
 @app.on_callback_query(filters.regex("zzzdv") & SUDOERS)
 async def mpdtsf(_, query: CallbackQuery):
    await query.edit_message_text(
-       f"""<b>↯︙مرحباً بك عزيزي المطور </b>\n\n<b>↯︙استخدم الازرار بالاسفل\n↯︙ل تصفح اوامر بوت القران</b>""",
+       f"""<b>⌔︙مرحباً بك عزيزي المطور </b>\n\n<b>⌔︙استخدم الازرار بالاسفل\n⌔︙ل تصفح اوامر بوت القران</b>""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -67,7 +67,7 @@ async def mpdtsf(_, query: CallbackQuery):
 async def zzzll(_, query: CallbackQuery):
    await query.edit_message_text(
        f"""
-↯︙<b>قائمة اوامر التشغيل :</b>
+⌔︙<b>قائمة اوامر التشغيل :</b>
 – – – – – – – – – – – – – – – – – –
 تشغيل + (اسم الاغنية / رابط الاغنية)
 <b>- ل تشغيل السورة في المكالمة الصوتية</b>
@@ -95,7 +95,7 @@ async def zzzll(_, query: CallbackQuery):
 async def zzzad(_, query: CallbackQuery):
    await query.edit_message_text(
        f"""
-↯︙<b>قائمة اوامر الادمن :</b>
+⌔︙<b>قائمة اوامر الادمن :</b>
 – – – – – – – – – – – – – – – – – –
 الاعدادات
 <b>- ل عرض إعدادات اوضاع التشغيل</b>
@@ -140,7 +140,7 @@ async def zzzad(_, query: CallbackQuery):
 async def zzzch(_, query: CallbackQuery):
    await query.edit_message_text(
        f"""
-↯︙<b>قائمة اوامر التشغيل في القناة :</b>
+⌔︙<b>قائمة اوامر التشغيل في القناة :</b>
 – – – – – – – – – – – – – – – – – –
 <b>- ارفع البوت إشراف في القناة و شغل مباشر</b>
 <b>- ارسل (/channelplay او ربط) + يوزر القناة ل الربط</b>
@@ -185,7 +185,7 @@ async def zzzch(_, query: CallbackQuery):
 async def zzzup(_, query: CallbackQuery):
    await query.edit_message_text(
        f"""
-↯︙<b>قائمة اوامر المطور :</b>
+⌔︙<b>قائمة اوامر المطور :</b>
 – – – – – – – – – – – – – – – – – –
 <b>- قائمة اوامر التحديثات :</b>
 – – – – – – – – – – – – – – – – – –
@@ -215,7 +215,7 @@ async def zzzup(_, query: CallbackQuery):
 async def zzzsu(_, query: CallbackQuery):
    await query.edit_message_text(
        f"""
-↯︙<b>قائمة اوامر المطور :</b>
+⌔︙<b>قائمة اوامر المطور :</b>
 – – – – – – – – – – – – – – – – – –
 <b>- قائمة اوامر الرفع :</b>
 – – – – – – – – – – – – – – – – – –
@@ -242,7 +242,7 @@ async def zzzsu(_, query: CallbackQuery):
 async def zzzbn(_, query: CallbackQuery):
    await query.edit_message_text(
        f"""
-↯︙<b>قائمة اوامر المطور :</b>
+⌔︙<b>قائمة اوامر المطور :</b>
 – – – – – – – – – – – – – – – – – –
 <b>- قائمة اوامر الحظر :</b>
 – – – – – – – – – – – – – – – – – –
@@ -277,9 +277,9 @@ async def zzzbn(_, query: CallbackQuery):
 async def zzzas(_, query: CallbackQuery):
    await query.edit_message_text(
        f"""
-↯︙<b>قائمة اوامر المطور :</b>
+⌔︙<b>قائمة اوامر المطور :</b>
 – – – – – – – – – – – – – – – – – –
-<b>↯︙قائمة اوامر المساعد :</b>
+<b>⌔︙قائمة اوامر المساعد :</b>
 – – – – – – – – – – – – – – – – – –
 السجل ⦗ تفعيل / تعطيل ⦘
 <b>- ل تفعيل/تعطيل اشعارات مجموعة سجل البوت</b>
