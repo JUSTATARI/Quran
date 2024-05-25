@@ -12,7 +12,7 @@ from config import OWNER_ID
 @app.on_callback_query(filters.regex("zzzback"))
 async def zzzback(_, query: CallbackQuery):
    await query.edit_message_text(
-       f"""<b>↯︙مرحباً بك عزيزي</b>\n<b>↯︙استخدم الازرار بالاسفل\n↯︙ل تصفح اوامر الميوزك</b>""",
+       f"""<b>⌔︙مرحباً بك عزيزي</b>\n<b>⌔︙استخدم الازرار بالاسفل\n⌔︙ل تصفح اوامر الميوزك</b>""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -28,7 +28,7 @@ async def zzzback(_, query: CallbackQuery):
                         "‹ اوامر المطور ›", callback_data="zzzdv"),
                 ],[
                     InlineKeyboardButton(
-                        "‹ 𝖬𝖺𝖳𝗋𝗂x 𝖳𝖾𝖠𝗆 ›", url="https://t.me/XMATTMX"),
+                        "اذاعة القران الكريم", url="https://t.me/quran_Tv21"),
                 ],
             ]
         ),
