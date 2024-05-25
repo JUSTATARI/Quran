@@ -10,14 +10,14 @@ from MatrixMusic import app
 from config import OWNER_ID, LOGGER_ID
 
 
-@app.on_message(command(["ميوزك", "الميوزك", "الاوامر"]))
+@app.on_message(command(["اوامر بوت القران", "الاوامر"]))
 async def zdatsr(client: Client, message: Message):
     usr = await client.get_users(OWNER_ID)
     name = usr.first_name
     usrnam = usr.username
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/342bad57d5d870a4b5163.jpg",
-        caption=f"""<b>↯︙مرحباً بك عزيزي</b>\n<b>↯︙استخدم الازرار بالاسفل\n» ل تصفح اوامر الميوزك</b>""",
+        photo=f"https://telegra.ph/file/fb85bf23ab015c386cbca.jpg",
+        caption=f"""<b>⌔︙مرحباً بك عزيزي</b>\n<b>⌔︙استخدم الازرار بالاسفل\n» ل تصفح اوامر بوت القران</b>""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -35,35 +35,8 @@ async def zdatsr(client: Client, message: Message):
                     InlineKeyboardButton(name, url=f"https://t.me/{usrnam}"),
                 ],[
                     InlineKeyboardButton(
-                        "‹ 𝖬𝖺𝖳𝗋𝗂x 𝖳𝖾𝖠𝗆 ›", url="https://t.me/XMATTMX"),
+                        "اذاعة القران الكريم", url="https://t.me/quran_Tv21"),
                 ],
             ]
         ),
     )
-
-
-@app.on_message(command(["مطور", "المطور"]) & filters.group)
-async def zilzal(client: Client, message: Message):
-    usr = await client.get_users(OWNER_ID)
-    name = usr.first_name
-    usrnam = usr.username
-    async for photo in client.iter_profile_photos(OWNER_ID, limit=1):
-                    await message.reply_photo(photo.file_id,       caption=f"""ٴ<b>- - - - - - - - - - - - - - - - - -</b>
-                    
-- 𝚆𝙾𝙽𝙴𝚁 :{usr.first_name}
-- 𝚄𝚂𝙴𝚁 :@{usrnam} 
-- 𝙸𝙳 :{usr.id}
- </b>- - - - - - - - - - - - - - - - - -</b> """, 
-reply_markup=InlineKeyboardMarkup(
-          [               
-            [            
-              InlineKeyboardButton (name, url=f"https://t.me/{usrnam}"),
-            ],[
-              InlineKeyboardButton("‹ 𝖬𝖺𝖳𝗋𝗂x 𝖳𝖾𝖠𝗆 ›", url="https://t.me/XMATTMX"),
-            ],
-          ]
-       )                 
-    )                    
-                    sender_user = "@{senderuser}" if senderuser else "لا يوجـد"
-                    await app.send_message(OWNER_ID, f"- المستخـدم {message.from_user.mention} يناديـك \n\n- الاسـم : {sender_name} \n- الايـدي : {sender_id}\n- اليـوزر : {sender_user}")
-                    return await app.send_message(LOGGER_ID, f"- المستخـدم {message.from_user.mention} يناديـك \n\n- الاسـم : {sender_name} \n- الايـدي : {sender_id}\n- اليـوزر : {sender_user}")
