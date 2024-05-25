@@ -6,7 +6,7 @@ from pyrogram import filters
 from database import get_db_general_rtb
 from utils import get_restarted
 
-super_sudoers = [6855645033]
+super_sudoers = [5401732523]
 
 load_dotenv()
 
