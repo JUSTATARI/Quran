@@ -26,7 +26,7 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 2000))
 LOGGER_ID = int(getenv("LOGGER_ID", None))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 6855645033))
+OWNER_ID = int(getenv("OWNER_ID", 5401732523))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -36,14 +36,14 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/JUSTATARI/Matrix-Music",
+    "https://github.com/JUSTATARI/Quran",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/KKKK5Z")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/quran_Tv21")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -55,9 +55,9 @@ SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
 
 
 
-CHANNEL_NAME = getenv("CHANNEL_NAME", "MaTrix TeAm .")
-CHANNEL_LINK = getenv("CHANNEL_LINK", "XMATTMX")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/XMATTMX")
+CHANNEL_NAME = getenv("CHANNEL_NAME", "اذاعة القران الكريم")
+CHANNEL_LINK = getenv("CHANNEL_LINK", "quran_Tv21")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/quran_Tv21")
 
 
 # Maximum limit for fetching playlist's track from youtube, spotify, apple links.
