@@ -30,7 +30,7 @@ async def aTari(client: Client, message: Message):
         )
                            )
 
-@app.on_message(command(["‹ خطبه ›", "خطبه") & filters.private)
+@app.on_message(command(["‹ خطبه ›", "خطبه"]) & filters.private)
 async def aTari(client: Client, message: Message):
     rl = random.randint(22,200)
     url = f"https://t.me/fresdewi/{rl}"
