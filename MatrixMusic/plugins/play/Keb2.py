@@ -29,3 +29,19 @@ async def aTari(client: Client, message: Message):
             ]
         )
                            )
+
+@app.on_message(command(["‹ خطبه ›", "خطبه") & filters.private)
+async def aTari(client: Client, message: Message):
+    rl = random.randint(22,200)
+    url = f"https://t.me/fresdewi/{rl}"
+    await client.send_voice(message.chat.id,url,caption="↯︙تم اختيار خطبة لك .",
+    reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        text=config.CHANNEL_NAME, url=lnk)
+                ],
+            ]
+        )
+                           )
+    
